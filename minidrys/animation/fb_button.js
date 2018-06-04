@@ -325,7 +325,7 @@ p.nominalBounds = new cjs.Rectangle(-1.5,-1.5,145.6,32.1);
 		this.btn.addEventListener("click", fl_ClickToGoToWebPage_6);
 		
 		function fl_ClickToGoToWebPage_6() {
-			window.open("http://www.adobe.com", "_blank");
+			window.open("https://www.facebook.com/minidrys", "_blank");
 		}
 	}
 
