@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--AL shylesheet-->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<!-- Eget stylesheet -->
+<link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+<!-- Font stylesheet -->
+<!--AL TYPEKIT-->
+<link rel="stylesheet" href="https://use.typekit.net/qhe5rvy.css">
+<!--Google font-->
+<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+<title>tegn-en-fugl</title>
+
+</head>
+<body onload="init();" style="margin:0px;">
+<!--Navigation start-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <nav class="navbar navbar-expand-md navbar-light bg-custom align-content-center">
+        <!--Logo-->
+        <a class="navbar-brand" href="index.html"> <img src="images/logo-minidrys_large.png" class="img-fluid" alt="Minidrys Logo"> </a>
+        <!--Menu links-->
+        <!--Kollaps menu-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!--Nav links pills-->
+          <ul class="nav nav-pills ml-auto">
+            <li class="nav-item pill-1"> <a class="nav-link" href="om-ny.html">Om</a> </li>
+            <li class="nav-item pill-2"> <a class="nav-link" href="blog.html">Blog</a> </li>
+			  <li class="nav-item pill-2"> <a class="nav-link" href="ide.html">Idéer</a></li>
+          </ul>
+          <!--	
+          Dropdown menu
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Idéer </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button">
+              <a href="find-legeplads.html">Find legeplads</a>
+              </button>
+              <button class="dropdown-item" type="button">Idé 2</button>
+              <button class="dropdown-item" type="button">Idé 3</button>
+            </div>
+          </div>
+		-->
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<!--Navigation slut-->
+<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:741px; height:500px">
+  <canvas id="canvas" width="741" height="500" style="position: relative; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+  <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:741px; height:500px; position: absolute; left: 0px; top: 0px; display: block;"> </div>
+</div>
+</body>
+</html>
