@@ -139,7 +139,7 @@ button.btn-secondary:hover {
 
 
 /*BRØDKRUMME*/
-.breadcrumb {
+#breadcrumb ol{
 	background-color: #d0e841;
 }
 
@@ -147,6 +147,22 @@ button.btn-secondary:hover {
 /*FOOTER*/
 .card img {
 	width: 320px;
+}
+
+a.footer-link-bg {
+    background-color: #FFFCF0;
+}
+
+a.footer-link-item, a.footer-link-item:hover {
+	background-color: #d0e841;
+}
+
+.list-group-item {
+    background-color: #FFFCF0;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+	background-color: #d0e841;
 }
 
 
@@ -158,28 +174,13 @@ button.btn-secondary:hover {
 /*LOGO*/
 
 
-/*FOOTER*/
-.list-group-item {
-    background-color: #FFFCF0;
-}
-
-.list-group-item-action:focus, .list-group-item-action:hover {
-	background-color: #d0e841;
-}
-
 
 
 /*STYLESHEETS FOR HVER ENKELT UNDERSIDE*/
 
 /*SIDE: OM*/
-quote {
-	font-family: "freight-sans-pro";
-	font-size: 1.2rem;
-	font-weight: 400;
-}
-
-#contact-us {
-	background-color: #FFFCF0;
+.send-button {
+    max-width: 70px;
 }
 
 
@@ -269,9 +270,17 @@ quote {
 /*TEGN EN FUGL*/
 
 
+/*VIDEO TUTORIAL*/
+#video-iframe {
+    position:relative;
+    height:0;
+    padding-bottom:56.25%;
+}
 
-
-
-
-
-
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    frameborder: 0;
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-<title>Find Legeplads</title>
+<title>Om Minidrys</title>
 
 <!--Bootstrap stylesheet-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,15 +16,12 @@
 <link rel="stylesheet" href="https://use.typekit.net/qhe5rvy.css">
 <!--Google font-->
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
-
-<!--Ikoner-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="init();">
 
-<!--Baggrundsbillede start-->
-<div class="container-fluid m-0 p-0 img-fluid" id="baggrundsbillede"> 
+<!--Baggrundsbillede start + extra class "scroll-bg" for fixed baggrund, mans man scroller nedad-->
+<div class="container-fluid m-0 p-0 img-fluid scroll-bg" id="baggrundsbillede"> 
   
   <!--Navigation start-->
   <div class="container">
@@ -42,8 +39,8 @@
             <!--Nav links pills-->
             <ul class="nav nav-pills ml-auto">
               <li class="nav-item pill-1"> <a class="nav-link" href="index.html">For børn</a></li>
-              <li class="nav-item pill-1"> <a class="nav-link" href="om.html">Om</a></li>
-              <li class="nav-item pill-2"> <a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item pill-1"> <a class="nav-link" href="om.html">Om</a> </li>
+              <li class="nav-item pill-2"> <a class="nav-link" href="blog.html">Blog</a> </li>
               <li class="nav-item pill-2"> <a class="nav-link" href="ide.html">Idéer</a></li>
               <li class="nav-item pill-2"> <a class="nav-link" href="find-legeplads.html">Find legeplads</a></li>
             </ul>
@@ -68,43 +65,38 @@
     </div>
   </div>
   
+  <!--Indhold--> 
+  
   <!--Overskrift-->
   <div class="container" id="overskrift"> 
     <!--Rækker-->
     <div class="row pt-5 pb-5"> 
       <!--Kolonne 1-->
-      <div class="col-sm-12 text-center">
-        <h1>Find nærmeste legeplads</h1>
+      <div class="col-sm-12 mt-4 text-center">
+        <h1>Video tutorial</h1>
       </div>
-    </div>
-  </div>
-  
-  <!--Google map billede og søgefunktion-->
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-sm-4"> 
-        <!--Søgefunktion-->
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Søg adresse" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Søg</button>
-        </form>
-      </div>
-      <!--Google map billede-->
-      <div class="col-sm-8">
-        <h2><i class="fas fa-map-marker-alt"></i>Google Map</h2>
-      </div>
-      <div class="col-sm-12"> <img src="images/google-map.png" class="img-fluid" alt="Google map"> </div>
-    </div>
-  </div>
-  
-  <!--Rating system-->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 pr-0"> <img src="images/rating-legeplads-bgorig.png" class="img-fluid" alt="Rating af legeplads"> </div>
-      <div class="col-sm-6 pl-0"> <img src="images/legeplads.jpg" class="img-fluid" alt="Billede af legeplads"> </div>
     </div>
   </div>
   <br>
+  
+  <!--Content-->
+  <div class="container"> 
+    <!--Rækker-->
+    <div class="row"> 
+      <!--Kolonne 1-->
+      <div class="col-sm-12">
+        <h2 class="text-center">DIY: Lær at lave en papir-telefon</h2>
+      </div>
+    </div>
+    
+    <!--Kolonne 2-->
+    <div class="col-sm-12 mb-4"> 
+      <!-- Youtube embedded video - kode hentet fra Youtube dele-funktion-->
+      <div id="video-iframe">
+        <iframe src="https://www.youtube.com/embed/jUcwsc2tlGE?rel=0&amp;ecver=2" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
   
   <!--Footer-->
   <div class="container">
@@ -148,9 +140,8 @@
   
   <!--Baggrundsbillede slut--> 
 </div>
-
 <!-- Optional JavaScript --> 
-<!--Fra Bootstrap 4 website: jQuery first, then Popper.js, then Bootstrap JS --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
