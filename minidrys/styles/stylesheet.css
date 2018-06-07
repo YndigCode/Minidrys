@@ -139,7 +139,7 @@ button.btn-secondary:hover {
 
 
 /*BRØDKRUMME*/
-#breadcrumb ol{
+.breadcrumb{
 	background-color: #d0e841;
 }
 
