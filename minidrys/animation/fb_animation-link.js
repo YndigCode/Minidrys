@@ -238,7 +238,7 @@ p.nominalBounds = new cjs.Rectangle(-1.5,-1.5,403.8,69.2);
 
 // stage content:
 (lib.fbanimationv3 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{button_box_btn:217,btn_box:0,"button_box_btn":217});
+	this.initialize(mode,startPosition,loop,{btn_box:0,button_box_btn:217});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -250,30 +250,15 @@ p.nominalBounds = new cjs.Rectangle(-1.5,-1.5,403.8,69.2);
 		   Keep the quotation marks ("").
 		*/
 		
-		this.btn_box.addEventListener("click", fl_ClickToGoToWebPage_5);
+		this.btn_box.addEventListener("click", fl_ClickToGoToWebPage);
 		
-		function fl_ClickToGoToWebPage_5() {
-			window.open("https://www.facebook.com/minidrys", "_blank");
-		}
-	}
-	this.frame_210 = function() {
-		/* Click to Go to Web Page
-		Clicking on the specified symbol instance loads the URL in a new browser window.
-		
-		Instructions:
-		1. Replace http://www.adobe.com with the desired URL address.
-		   Keep the quotation marks ("").
-		*/
-		
-		this.btn_box.addEventListener("click", fl_ClickToGoToWebPage_5);
-		
-		function fl_ClickToGoToWebPage_5() {
+		function fl_ClickToGoToWebPage() {
 			window.open("https://www.facebook.com/minidrys", "_blank");
 		}
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(210).call(this.frame_210).wait(8));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(218));
 
 	// button_box
 	this.btn_box = new lib.btn_box();
