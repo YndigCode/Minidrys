@@ -18,8 +18,9 @@
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
 
 <!-- Animate CC -->
+<!-- write your code here -->
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="animation/fb_button.js"></script>
+<script src="animation/fb_animation.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -34,7 +35,7 @@ function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
 	var lib=comp.getLibrary();
 	var ss=comp.getSpriteSheet();
-	exportRoot = new lib.animate_smallv2();
+	exportRoot = new lib.fbanimationv3();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
@@ -79,11 +80,12 @@ function handleComplete(evt,comp) {
 			stage.tickOnUpdate = true;		
 		}
 	}
-	makeResponsive(true,'both',false,1);	
+	makeResponsive(true,'both',true,1);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
 </script>
+<!-- write your code here -->
 <!-- Animate CC -->
 </head>
 
@@ -222,14 +224,14 @@ function handleComplete(evt,comp) {
     <div class="row text-center"> 
       <!--Kolonne 2 - Følg os på Facebook animation-->
       <div class="col-sm-12">
-        <h2>Følg os på Facebook</h2>
       </div>
       <!--Animation-->
       <div class="col-sm-12 mb-4">
-        <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:300px; height:250px">
-          <canvas id="canvas" width="300" height="250" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-          <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:300px; height:250px; position: absolute; left: 0px; top: 0px; display: block;"> </div>
-        </div>
+       <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:550px; height:300px">
+            <canvas id="canvas" width="550" height="300" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:550px; height:300px; position: absolute; left: 0px; top: 0px; display: block;">
+            </div>
+	    </div>
       </div>
     </div>
   </div>

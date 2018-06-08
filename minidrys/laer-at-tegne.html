@@ -20,7 +20,7 @@
 <!-- Animate CC -->
 <!-- write your code here -->
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="animation/tegn-en-fugl.js"></script>
+<script src="animation/laer-at-tegne-tutorial.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -35,8 +35,9 @@ function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
 	var lib=comp.getLibrary();
 	var ss=comp.getSpriteSheet();
-	exportRoot = new lib.RECOVER_RECOVER_tegnereversedmedbtn();
-	stage = new lib.Stage(canvas);	
+	exportRoot = new lib.tegn_animation();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
@@ -161,9 +162,10 @@ function handleComplete(evt,comp) {
         
         <!--Animation-->
         <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:741px; height:500px">
-          <canvas id="canvas" width="741" height="500" style="position: relative; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-          <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:741px; height:500px; position: absolute; left: 0px; top: 0px; display: block;"> </div>
-        </div>
+            <canvas id="canvas" width="741" height="500" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:741px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">
+            </div>
+	    </div>
       </div>
     </div>
   </div>
